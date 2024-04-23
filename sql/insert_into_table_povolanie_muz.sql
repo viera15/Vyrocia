@@ -1,5 +1,6 @@
 INSERT INTO povolanie_muz(povolanie_m, datum_vytvorenia)
-VALUES ('spevák (kastrát)',CURRENT_TIMESTAMP),
+VALUES ('neurčený',CURRENT_TIMESTAMP),
+       ('spevák (kastrát)',CURRENT_TIMESTAMP),
 	   ('hudobný skladateľ',CURRENT_TIMESTAMP),
 	   ('organista',CURRENT_TIMESTAMP),
 	   ('huslista',CURRENT_TIMESTAMP),
