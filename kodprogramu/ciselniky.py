@@ -1,11 +1,13 @@
 from kodprogramu.funkcie.ZakladneFunkcie import Tabulka
 
-def vlozenie_privlastok_muz():
+class Ciselnik(Tabulka):
 
-    vloz_privlastok_muz = input("Vlož prívlastok muž: ")
+    def __init__(self):
+        super().__init__(self)
+    def vlozenie_privlastok_muz(self, vloz_privlastok_muz):
 
-    prikaz_vlozit_privlastok_muz = f'''INSERT INTO privlastok_muz(privlastok_m, datum_vytvorenia)
-    VALUES ('{vloz_privlastok_muz}',CURRENT_TIMESTAMP);'''
+        prikaz_vlozit_privlastok_muz = f'''INSERT INTO privlastok_muz(privlastok_m, datum_vytvorenia)
+        VALUES ('{vloz_privlastok_muz}',CURRENT_TIMESTAMP);'''
 
-    tabulka = Tabulka(prikaz_vlozit_privlastok_muz)
-    tabulka.vlozit_udaje_do_tabulky()
+        tabulka = Tabulka(prikaz_vlozit_privlastok_muz)
+        tabulka.vlozit_udaje_do_tabulky()
