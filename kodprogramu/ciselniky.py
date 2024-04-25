@@ -9,5 +9,3 @@ def vlozenie_privlastok_muz():
 
     tabulka = Tabulka(prikaz_vlozit_privlastok_muz)
     tabulka.vlozit_udaje_do_tabulky()
-
-vlozenie_privlastok_muz()
